@@ -235,8 +235,8 @@ server {
         proxy_set_header HTTP_X_FORWARDED_HOST \$remote_addr;
 
         #   odoo    log files
-        access_log  /var/log/nginx/odoo.pronexo.com-access.log;
-        error_log   /var/log/nginx/odoo.pronexo.com-error.log;
+        access_log  /var/log/nginx/odoo-access.log;
+        error_log   /var/log/nginx/odoo-error.log;
 
         #   force   timeouts    if  the backend dies
         proxy_next_upstream error   timeout invalid_header  http_500    http_502
